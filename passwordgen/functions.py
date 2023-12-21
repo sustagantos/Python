@@ -36,3 +36,32 @@ def table(passlen):        #checks if user wants to use special chars
             print("\nyou must type separator number!")
             continue
 
+def init_numascii(numascii):
+
+    for i in range(48,58):      #numbers in the ascii table
+        numascii.append(i)
+
+def init_with_others(table):
+
+    for i in lt.alphl:
+        table.append(i)
+
+    for i in lt.alphu:
+        table.append(i)
+
+    for i in lt.other:
+        table.append(i)
+
+    for i in lt.num:
+        table.append(i)
+
+def init_without_others(table):
+
+    for i in lt.alphl:
+        table.append(i)
+
+    for i in lt.alphu:
+        table.append(i)
+
+    for i in lt.num:
+        table.append(i)        
